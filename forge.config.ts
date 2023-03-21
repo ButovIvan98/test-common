@@ -35,6 +35,19 @@ const config: ForgeConfig = {
       },
     }),
   ],
+   publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        authToken: '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',
+        repository: {
+          owner: 'IvanButov98',
+          name: 'test-common'
+        },
+        prerelease: true
+      }
+    }
+  ]
 };
 
 export default config;
